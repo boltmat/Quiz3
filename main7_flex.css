@@ -1,0 +1,156 @@
+/*
+Style Sheet for CS202
+* version: 4.0
+* last modified: 1.25.2022
+* author: Justice Banson
+* email: justice@justicebanson.com
+* website: lesson 9
+*/
+/* 
+Contents:
+1. Variables
+2. Body
+2. Header
+3. banner
+4. Navigation
+5. Main
+6. Footer
+*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  /* absolute */
+  background: transparent;
+  z-index: 10;
+}
+
+.logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+  flex: 0.97;
+}
+
+.banner {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.header-flex {
+  display: flex;
+}
+
+.banner-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding-top: 150px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text-items {
+  color: #fff;
+  text-align: center !important;
+  margin: auto;
+  flex-direction: column;
+  width: 50%;
+}
+
+.banner-text-items h2 {
+  font-size: 3rem;
+}
+
+nav {
+  text-align: center;
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+  justify-content: space-evenly;
+}
+
+.padding {
+  padding: 4rem 0;
+}
+
+.bg-color {
+  background-color: #333;
+  overflow: hidden;
+}
+
+main {
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sideleft {
+  width: 50%;
+  text-align: center;
+}
+
+.sideright {
+  width: 50%;
+  text-align: center;
+}
+
+.btn {
+  background: #05a081;
+  padding: 0.6em 2em;
+  color: #fff;
+  /* box-shadow: horizontal vertical blur-radius color; */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+}
+
+.box {
+  flex: 33.3%;
+  text-align: center;
+  color: #fff;
+}
+
+.box .fas {
+  font-size: 2em;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+.social {
+  width: 50px;
+  position: fixed;
+  top: 65%;
+  left: 1%;
+}
+
+.social i {
+  display: block;
+  width: 40px;
+  font-size: 1.4em;
+  cursor: pointer;
+  padding: 2px;
+}/*# sourceMappingURL=main7_flex.css.map */
